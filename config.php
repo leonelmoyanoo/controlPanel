@@ -10,7 +10,7 @@
         'username'   => 'root',
         'password'   => '',
         'port'       => 3306,
-        'database'   => 'control'
+        'database'   => 'controlpanel'
     );
 
     $GLOBALS['tables'] = array(
@@ -44,7 +44,7 @@
     try {
         $GLOBALS['server'] =  new PDO('mysql:host=' . $server['hostname'] . ':' . $server['port'] . ';dbname=' . $server['database'] .';charset=utf8', $server['username'], $server['password']);
     } catch (PDOException $e) {
-        $secure = false; $title = 'Error fatal';
+        $secure = false; $title = 'Fatal error';
         echo '
         <html>
           <head>
