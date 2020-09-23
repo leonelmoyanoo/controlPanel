@@ -1,0 +1,119 @@
+@media only screen and (min-width: 768px) {
+  .brand-logo {
+    padding-left: 0.4em;
+  }
+
+  #account_greeter {
+    padding-right: 0.4em;
+    cursor: default;
+  }
+}
+
+body {
+  background-color: white;
+}
+
+nav {
+  order: 3px black solid;
+  background-color: black;
+}
+
+.form_box {
+  max-width: 25em;
+  margin: auto;
+  padding: 0.8em;
+  padding-right: 1.5em;
+}
+
+.titulo {
+  -webkit-text-stroke: 2px black;
+
+}
+
+.mensaje {
+  text-overflow: ellipsis;
+}
+
+.option {
+  transition: transform 0.2s, background-color 0s;
+}
+
+.option:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.option:active {
+  background-color: #fffde7;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid black;
+  -webkit-box-shadow: 0 1px 0 0 black;
+  box-shadow: 0 1px 0 0 black;
+}
+
+.padded_checkbox {
+  padding-left: 1em;
+}
+
+.collection-item,
+.option {
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s
+}
+
+.collection-item:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.subencabezado {
+  background-color: #f9a825;
+}
+
+.tab-item {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.tab-item:hover {
+  transform: scale(1.05, 1.05) translateX(5px);
+}
+
+.collection-item span h5,
+.collection-item p {
+  user-select: none;
+}
+
+
+
+.inner {
+  margin-top: 0.5em;
+  border-left: 1px solid #E0E0E0;
+  /* Materialize stock picker border. */
+  height: 92vh;
+  width: 1px;
+}
+
+.card-content * {
+  cursor: default;
+}
+
+#vcentered_message {
+  position: fixed;
+  top: 40%;
+  width: 100%;
+}
