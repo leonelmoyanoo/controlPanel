@@ -1220,6 +1220,7 @@
                                                 `ID_SubPedido`,
                                                 `Cantidad`';
                                   $valores = $idOrden.','.'2'.','.$id.','.$foodS.','.'1';
+
                                   if (INSERT($tables["order_Products"],$columnas,$valores)) {
                                     for ($x=0; $x < count($soat); $x++) { 
                                     
@@ -1264,7 +1265,6 @@
                             }
                           }
                         }
-
                         if (count($drink)>0) {
                           for ($i=0; $i < count($drink); $i++) {
                             $sql = 'SELECT COUNT(*) FROM '.$tables["order_Products"].'
@@ -1299,8 +1299,6 @@
                             }
                           }
                         }
-                        
-                        
                         if (count($promo)>0) {
                           for ($i=0; $i < count($promo); $i++) { 
                             $sql = 'SELECT COUNT(*) FROM '.$tables["order_Products"].'

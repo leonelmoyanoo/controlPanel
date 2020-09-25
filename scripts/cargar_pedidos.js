@@ -325,7 +325,7 @@ function finish_make_order() {
                                             <div class="card z-depth-5" >
                                                 <div class="card-content white left-align">
                                                 <span class="card-title black-text">
-                                                    Pedido: #` + data[0]["IDFinal"] + `
+                                                    Pedido: #` + id + `
                                                 </span>
                                                 <p>
                                                     Precio: $` + data[0]["Total"] + `

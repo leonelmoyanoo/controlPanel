@@ -11,7 +11,7 @@ $scripts = ['cargar_pedidos']; ?>
 </div>
 
 <div class="row">
-  <div class="col s5">
+  <div class="col s6">
     <!-- Inner right -->
     <div class="row">
 
@@ -23,9 +23,7 @@ $scripts = ['cargar_pedidos']; ?>
     </div>
   </div>
 
-  <div class="col s2 inner"></div> <!-- Separator -->
-
-  <div class="col s5">
+  <div class="col s6">
     <!-- Inner right -->
     <div class="row">
       <h5 class="col s12 grey-text center-align">Finalizado</h5>
@@ -234,10 +232,6 @@ $scripts = ['cargar_pedidos']; ?>
           <label>
             <input class="with-gap" name="radio" id="Regalo" type="radio" />
             <label for=Regalo>Regalo</label>
-          </label>
-          <label>
-            <input class="with-gap" name="radio" id="PedidosYa" type="radio" />
-            <label for=PedidosYa>Pedidos Ya!</label>
           </label>
         </div>
         <div class="row">
